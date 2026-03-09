@@ -1,3 +1,6 @@
 [submodule "onnx2tf"]
 	path = onnx2tf
 	url = git@github.com:ctk2156/onnx2tf.git
+[submodule "tensorflow"]
+	path = tensorflow
+	url = git@github.com:ctk2156/tensorflow.git
