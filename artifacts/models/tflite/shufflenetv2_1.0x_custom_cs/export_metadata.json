@@ -1,0 +1,32 @@
+{
+  "baseline_model_impl": "official_megvii_shufflenetv2",
+  "benchmark_single_thread_xnnpack_fp16_us": 2497.45,
+  "benchmark_single_thread_xnnpack_fp32_us": 5039.34,
+  "benchmark_vs_baseline_single_thread_xnnpack_fp16_delta_us": 295.46,
+  "benchmark_vs_baseline_single_thread_xnnpack_fp16_improvement_pct": 10.58,
+  "benchmark_vs_baseline_single_thread_xnnpack_fp32_delta_us": 297.91,
+  "benchmark_vs_baseline_single_thread_xnnpack_fp32_improvement_pct": 5.58,
+  "custom_op_name": "ONNX_CHANNELSHUFFLESPLIT",
+  "enable_accumulation_type_float16": false,
+  "flatbuffer_direct_allow_custom_ops": true,
+  "flatbuffer_direct_custom_op_allowlist": [
+    "ChannelShuffleSplit"
+  ],
+  "float32_tflite": "/Users/zhangdongjiu/Workspaces/mobilenetv3.pytorch/artifacts/models/tflite/shufflenetv2_1.0x_custom_cs/shufflenetv2_1.0x_custom_cs_float32.tflite",
+  "input_shape_nhwc": [
+    1,
+    224,
+    224,
+    3
+  ],
+  "model_impl": "official_megvii_shufflenetv2_custom_channel_shuffle",
+  "model_size": "1.0x",
+  "onnx_path": "/Users/zhangdongjiu/Workspaces/mobilenetv3.pytorch/artifacts/models/onnx/shufflenetv2_1.0x_custom_cs.onnx",
+  "output_signaturedefs": false,
+  "removed_generated_float16_tflite": false,
+  "removed_generated_float16_tflite_path": "",
+  "runtime_precision_policy": "Retain float32 TFLite only. Use XNNPACK runtime flags to switch between fp32 and fp16 execution.",
+  "test_data_nhwc_path": "/Users/zhangdongjiu/Workspaces/mobilenetv3.pytorch/artifacts/models/tflite/test_data_nhwc_224x224.npy",
+  "validation_max_abs_diff_vs_baseline": 0.0,
+  "weights": "random"
+}
